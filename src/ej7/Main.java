@@ -1,5 +1,6 @@
 package ej7;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
@@ -7,20 +8,58 @@ public class Main {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
+		//
 		Scanner sc=new Scanner(System.in);
 		
-		int[] ano=new int[12];
+		//
+		int[] tablaSeis=new int [6];
 		
-		//variable para el mes de cada año. esta va a aumentar hasta que llega al ultimo tamaño del array del año
-		int mes=0;
+		//
+		int[] tablaGanadora=new int [6];
 		
-		//variable para introducir valores
-		int num=0;
+		//
+//		int numRandomA=0;
 		
+		//
+		int numAciertos=0;
 		
+		//recorre los 6 numeros de la tabla
+		for(int i=0;i<tablaSeis.length;i++) {
+//			
+//			numRandom=(int)(Math.random())*49+1;
+			
+			//
+			tablaSeis[i]=(int)(Math.random()*49+1);
+			
+			//
+			tablaGanadora[i]=(int)(Math.random()*49+1);
+			
+			
+			
+		}
 		
+		//
+		Arrays.sort(tablaGanadora);
 		
+		//
+		System.out.println(Arrays.toString(tablaSeis));
 		
+		//
+		System.out.println(Arrays.toString(tablaGanadora));
+		
+		//recorre los 6 numeros de la tabla
+		for(int i=0;i<tablaSeis.length;i++) {
+			
+			
+			
+			
+			//si un numero coincide con uno de la tabla ganadora
+			if() {
+				numAciertos++;
+			}
+			
+			
+		}
 		
 	}
 

@@ -15,7 +15,7 @@ public class TestClase {
 		//
 		for(int i=0;i<=10;i++) {
 			
-			//
+			//aumentamos el fin para extenderlo a la parte siguiente
 			fin+=i;
 			
 			//
