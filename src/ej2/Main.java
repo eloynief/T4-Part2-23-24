@@ -1,46 +1,32 @@
 package ej2;
 
 import java.util.Arrays;
-import java.util.Scanner;
 
 public class Main {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		final String MESES[]= {
-				"Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"
-				};
+
+		//creamos el array para guardar los numeros
+		int[] secuencia=new int [55];
 		
-		Scanner sc=new Scanner(System.in);
+		//variable que representa el punto inicial en el cual el array va introduciendo el numero indicado
+		int inicio=0;
 		
-		
-		
-		int[] ano=new int[MESES.length];
-		
-		//variable para introducir valores
-		int aumento=0;
-		
-		
-		//
-		
-		
-		for(int i=0;i<ano.length;i++) {
-			aumento+=i;
+		//se recorre la tabla
+		for(int i=0;i<=10;i++) {
 			
-			//
-			Arrays.fill(ano, i+1);
 			
-			//
-			while(aumento+1>0) {
-				System.out.println(i+1);
-				aumento--;
-			}
+			//le introducimos el numero indicado en las posiciones a partir del valor del inicio hasta el final(inicio+i)
+			Arrays.fill(secuencia,inicio,inicio+i,i);
 			
+			//aumentamos el valor del inicio
+			inicio=inicio+i;
 		}
-		
-		//
-		
+
+		//imprimimos la tabla(secuencia)
+		System.out.println(Arrays.toString(secuencia));
 		
 	}
 

@@ -38,7 +38,7 @@ public class Main {
 			
 		}
 		
-		//
+		//ordenamos la tabla gnadora de menor a mayor
 		Arrays.sort(tablaGanadora);
 		
 		//
@@ -52,9 +52,10 @@ public class Main {
 			
 			
 			
+			//quiero verlo con elena para ver si en el ejercicio el numero tiene que estar en la misma posicion o no
 			
 			//si un numero coincide con uno de la tabla ganadora
-			if() {
+			if(tablaSeis[i]==tablaGanadora[i]) {
 				numAciertos++;
 			}
 			

@@ -2,7 +2,7 @@ package ej2;
 
 import java.util.Arrays;
 
-public class TestClase {
+public class MainConVarFin {
 
 	public static void main(String[] args) {
 		

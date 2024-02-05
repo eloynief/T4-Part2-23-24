@@ -1,24 +1,29 @@
 package ej4;
 
-import java.util.Scanner;
+import java.util.Arrays;
 
 public class Main {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		
-		Scanner sc=new Scanner(System.in);
+		//variable que guarda los numeros de la tabla para luego ordenarlos
+		int[] tabla=new int[30];
 		
-		int[] ano=new int[12];
+		//variable que guarda un numero random que se va generando
+		int random;
 		
-		//variable para el mes de cada año. esta va a aumentar hasta que llega al ultimo tamaño del array del año
-		int mes=0;
+		for (int i=0;i<tabla.length;i++) {
+			
+			//generamos el valor automatico
+			random=(int)(Math.random()*10);
+			
+			//le damos el valor del n aleatorio a la posicion de la tabla
+			tabla[i]=random;
+			
+		}
 		
-		//variable para introducir valores
-		int num=0;
-		
-		
-		
+		//ordenamos la tabla
+		Arrays.sort(tabla);
 		
 		
 		
